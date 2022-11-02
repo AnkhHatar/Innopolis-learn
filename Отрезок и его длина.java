@@ -1,7 +1,7 @@
-public class Main {                         //Основная ветвь
+public class Main {                                             //Основная ветвь
     public static void main(String[] args) {
-        Point a = new Point(5.0, -3.0);
-        Point b = new Point(0, 7.0);
+        Point a = new Point(4,-6);
+        Point b = new Point(0,7);
         Segment d = new Segment(a, b);
         d.PrintSegment();
         d.CalcSegment();
@@ -9,7 +9,7 @@ public class Main {                         //Основная ветвь
     }
 }
 
-public class Point {                  //Определение точки
+public class Point {                                             //Определение точки  
     public double x;
     public double y;
     Point(double x, double y) {
@@ -19,7 +19,7 @@ public class Point {                  //Определение точки
 }
 
 
-public class Segment{                             //Определение отрезка и операций с ним
+public class Segment{                                           //Определение отрезка и операций с ним
     public Segment(Point a, Point b){
         this.a = a;
         this.b = b;
@@ -32,6 +32,6 @@ public class Segment{                             //Определение от�
         segment = Math.sqrt(((b.x-a.x)*(b.x-a.x)) +((b.y-a.y) * ((b.y-a.y))));
     }
     public void PrintSegment(){
-     System.out.printf("Segment d is on (a (%.2f,%.2f),b (%.2f,%.2f))\n", a.x,a.y,b.x,b.y);  
+     System.out.printf("Segment d is on (a (%.2f,%.2f), b (%.2f,%.2f))\n", a.x,a.y,b.x,b.y);  
     }
-}
+}  
